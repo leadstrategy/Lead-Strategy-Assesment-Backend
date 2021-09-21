@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "instructions",
+  "info": {
+    "name": "Instructions"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "data": {
+      "type": "richtext"
+    },
+    "quiz": {
+      "via": "instructions",
+      "model": "quizzes"
+    }
+  }
+}

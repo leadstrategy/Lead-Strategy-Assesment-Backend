@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "results",
+  "info": {
+    "name": "result",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "candidate": {
+      "model": "candidates"
+    },
+    "questions": {
+      "collection": "questions",
+      "via": "result"
+    },
+    "answers": {
+      "type": "json"
+    },
+    "result": {
+      "type": "integer"
+    }
+  }
+}
